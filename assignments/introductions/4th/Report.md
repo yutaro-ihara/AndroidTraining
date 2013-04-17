@@ -7,3 +7,12 @@ Android の基礎知識
 ======
 
 4. `adb`コマンドを使って、下記の項目を実行してください（課題のファイルに、実行したコマンドを記録しておいてください）。
+
+* ローカルからデバイスのsdcard領域に転送
+** adb push scopes.txt /sdcard/
+* デバイスのsdcard領域からローカルに転送
+** adb pull /sdcard/scopes.txt scopes2.txt
+* 手動インストール
+** adb install IharaProject.apk
+* 手動アンインストール
+** adb uninstall jp.mixi.ihara.project
