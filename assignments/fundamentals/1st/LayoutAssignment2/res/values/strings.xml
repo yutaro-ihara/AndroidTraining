@@ -4,5 +4,9 @@
     <string name="app_name">LayoutAssignment2</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="app_title">ドロイド君の画像ファイル</string>
+    <string name="img_path">res/ic_launcher.png</string>
+    <string name="img_detail">xhdpi</string>
+    <string name="img_size">12,516 byte</string>
 
 </resources>

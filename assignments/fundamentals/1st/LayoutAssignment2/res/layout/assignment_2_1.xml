@@ -5,24 +5,29 @@
     tools:context=".MainActivity" >
 
     <!-- このLinearLayoutをRelativeLayoutに変更して同じレイアウトを実現してください -->
-    <LinearLayout
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ffc356"
-        android:orientation="horizontal"
         android:padding="4dp" >
 
         <ImageView
+            android:id="@+id/droid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="4dp"
             android:background="#ffffff"
+            android:contentDescription="@string/hello_world"
             android:src="@drawable/ic_launcher" />
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_alignTop="@+id/droid"
+            android:layout_alignBottom="@+id/droid"
+            android:layout_toRightOf="@+id/droid"
+            android:layout_alignParentRight="true"
             android:orientation="vertical" >
 
             <TextView
@@ -35,8 +40,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="#ffedc6" />
+                android:background="#ffedc6"/>
         </LinearLayout>
-    </LinearLayout>
+    </RelativeLayout>
 
 </FrameLayout>
