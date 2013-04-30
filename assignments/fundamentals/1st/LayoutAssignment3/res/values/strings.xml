@@ -6,4 +6,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="profile">プロフィール</string>
     <string name="nickname">Yutaro IHARA</string>
+    <string name="menu">メニュー</string>
+    <string name="tweet">つぶやきを投稿する</string>
+    <string name="recent">最近</string>
+    <string name="notify_message">件のお知らせがあります！</string>
+    <string name="badge_num">30</string>
 </resources>
