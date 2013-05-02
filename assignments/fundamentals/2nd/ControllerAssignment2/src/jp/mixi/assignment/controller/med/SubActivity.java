@@ -14,6 +14,9 @@ import android.widget.TextView;
  * @author keishin.yokomaku
  */
 public class SubActivity extends Activity implements TextWatcher {
+	
+	private static final String TEXT_KEY = "TEXT_KEY";
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Hint: 状態遷移が何も起こっていない場合は、savedInstanceState は null です
@@ -34,6 +37,8 @@ public class SubActivity extends Activity implements TextWatcher {
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
+        TextView text = (TextView) findViewById(R.id.SyncedText);
+        text.setText(savedInstanceState.getString(TEXT_KEY));
     }
 
     /**
@@ -42,6 +47,9 @@ public class SubActivity extends Activity implements TextWatcher {
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
+        EditText text = (EditText) findViewById(R.id.Editor);
+        Editable editable = text.getText();
+        outState.putString(TEXT_KEY, editable.toString());
     }
 
     @Override
