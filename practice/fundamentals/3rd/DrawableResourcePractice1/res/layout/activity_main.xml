@@ -9,9 +9,12 @@
     tools:context=".MainActivity" >
 
     <!-- TODO: この ImageView の背景として、作成した drawable を割当てる -->
+
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:background="@drawable/circle_in_rectangle"
+        android:contentDescription="@string/hello_world" />
 
 </RelativeLayout>
