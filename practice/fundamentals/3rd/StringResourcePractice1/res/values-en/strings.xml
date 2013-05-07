@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello_world">hello, world</string>
+    <string name="monetary_unit">dollar</string>
+    <string name="title">title</string>
+    <string name="state">sleepy</string>
+    <string name="like">like</string>
+    <string name="share">share</string>
+    
+</resources>
