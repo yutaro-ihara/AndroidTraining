@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello_world">こんにちわ、世界</string>
+    <string name="monetary_unit">円</string>
+    <string name="title">タイトル</string>
+    <string name="state">ねむい</string>
+    <string name="like">イイネ</string>
+    <string name="share">共有</string>
+    
+</resources>

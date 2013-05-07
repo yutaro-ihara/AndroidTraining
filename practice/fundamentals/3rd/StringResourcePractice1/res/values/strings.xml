@@ -6,5 +6,10 @@
     <string name="hello_world">Hello world!</string>
     <!-- TODO: 実習1: ここから下に、日本語の String リソースを作る -->
     <!-- TODO: 実習2: 日本語の String リソースに対応する英語リソースを作る -->
+    <string name="monetary_unit">円</string>
+    <string name="title">タイトル</string>
+    <string name="state">ねむい</string>
+    <string name="like">イイネ</string>
+    <string name="share">共有</string>
 
 </resources>
