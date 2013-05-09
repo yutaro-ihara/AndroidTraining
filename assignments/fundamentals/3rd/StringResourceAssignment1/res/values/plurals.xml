@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <plurals name="texts">
+        <item quantity="one">there is one.</item>
+        <item quantity="other">there are %1$d.</item>
+    </plurals>
+
+</resources>
