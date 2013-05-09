@@ -30,23 +30,5 @@ public class MainActivity extends Activity {
 				.setContentText(getString(R.string.notification_message))
 				.setContentIntent(contentIntent).build();
 		manager.notify(R.string.app_name, notification);
-		/*
-		 * Uri uri = Uri.parse(json.getString("url")); Intent remoteIntent = new
-		 * Intent(Intent.ACTION_VIEW, uri); PendingIntent contentIntent =
-		 * PendingIntent.getActivity( context.getApplicationContext(), 0,
-		 * remoteIntent, 0);
-		 * 
-		 * NotificationManager manager = (NotificationManager) context
-		 * .getSystemService(Context.NOTIFICATION_SERVICE);
-		 * 
-		 * Notification notification = new NotificationCompat.Builder(
-		 * context.getApplicationContext()).setAutoCancel(true)
-		 * .setTicker(msg.toString())
-		 * .setContentTitle(context.getString(R.string.app_name))
-		 * .setSmallIcon(R.drawable.ic_launcher) .setContentText(msg.toString())
-		 * .setContentIntent(contentIntent).build();
-		 * 
-		 * manager.notify(R.string.app_name, notification);
-		 */
 	}
 }
