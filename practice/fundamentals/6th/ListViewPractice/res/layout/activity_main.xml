@@ -4,7 +4,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity" >
 
-    <ListView android:id="@+id/ListView"
+    <ListView
+        android:id="@+id/ListView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" 
+        android:layout_above="@+id/Button"/>
+
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/button_text"/>
+
 </RelativeLayout>
