@@ -2,12 +2,31 @@ package jp.mixi.practice.serializable;
 
 import java.util.Date;
 
-public class User {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class User implements Parcelable{
     private String name;
     private int id;
     private int age;
     private String keyword;
     private Status status;
+    private int mData;
+    
+    public User() {
+	}
+    
+    private User(Parcel in) {
+    	mData = in.readInt();
+    }
+    
+    public void setData(int data) {
+    	mData = data;
+    }
+    
+    public int getData() {
+    	return mData;
+    }
     
     public String getName() {
         return name;
@@ -50,20 +69,45 @@ public class User {
     }
 
     public static class Status{
-        private Date mPostedDate;
-        private String mText;
+        private Date postedDate;
+        private String text;
         public Date getPostedDate() {
-            return mPostedDate;
+            return postedDate;
         }
         public String getText(){
-            return mText;
+            return text;
         }
         public void setPostedDate(Date date){
-            mPostedDate = date;
+            this.postedDate = date;
         }
         public void setText(String text) {
-            mText = text;
+            this.text = text;
         }
     }
+
+	@Override
+	public int describeContents() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void writeToParcel(Parcel dest, int flags) {
+		dest.writeInt(mData);
+	}
+	
+	public static final Parcelable.Creator<User> CREATER = new Parcelable.Creator<User>() {
+
+		@Override
+		public User createFromParcel(Parcel source) {
+			return new User(source);
+		}
+
+		@Override
+		public User[] newArray(int size) {
+			return new User[size];
+		}
+		
+	};
 
 }

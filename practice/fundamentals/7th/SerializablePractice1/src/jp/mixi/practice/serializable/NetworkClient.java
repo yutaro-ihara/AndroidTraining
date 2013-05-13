@@ -36,10 +36,10 @@ public class NetworkClient {
             if (rand.nextBoolean()) {
                 json.put("keyword", "keyword_" + userId);
             }
-            CharSequence postedTime = DateFormat.format("yyyy-MM-dd hh:mm:ss",
+            CharSequence postedDate = DateFormat.format("yyyy-MM-dd hh:mm:ss",
                     getPastedTime(-1 * rand.nextInt(100)));
             JSONObject status = new JSONObject();
-            status.put("postedTime", postedTime);
+            status.put("postedDate", postedDate);
             status.put("text", "しぶやなう");
             json.put("status", status);
             return json;
