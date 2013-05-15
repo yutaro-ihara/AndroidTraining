@@ -6,6 +6,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
@@ -58,6 +59,8 @@ public class MainActivity extends Activity {
          */
         @Override
         protected Void doInBackground(Void... params) {
+        	((TextView) findViewById(R.id.text)).setText("hage");
+        	
             try {
                 publishProgress();
                 Thread.sleep(2000L);
