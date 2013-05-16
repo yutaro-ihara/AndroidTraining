@@ -1,6 +1,7 @@
 
 package jp.mixi.practice.sqlite;
 
+import android.net.Uri;
 import android.provider.BaseColumns;
 
 public class Book implements BaseColumns {
@@ -8,6 +9,12 @@ public class Book implements BaseColumns {
     @SuppressWarnings("unused")
     private static final String TAG = Book.class.getSimpleName();
 
+    public static final String AUTHORITY = "jp.mixi.practice.sqlite.Book";
+    
+    public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/book");
+    
+    public static final int BOOK = 1;
+    
     public static final String BOOK_TABLE_NAME = "book";
 
     public static final String COLUMN_NAME_BOOK_TITLE = "title";

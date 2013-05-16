@@ -22,6 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:name="jp.mixi.practice.sqlite.BookContentProvider"
+            android:authorities="jp.mixi.practice.sqlite.Book"
+            android:exported="false" >
+        </provider>
     </application>
 
 </manifest>
